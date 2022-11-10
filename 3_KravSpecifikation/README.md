@@ -1,5 +1,3 @@
-Gruppe: Schlugma
-
 # Krav specifikation
 
 
