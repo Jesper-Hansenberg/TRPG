@@ -1,4 +1,7 @@
+Gruppe: Schlugma
+
 # Krav specifikation
+
 
 ## Aktør tabel
 
