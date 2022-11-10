@@ -9,7 +9,7 @@
 |A4|Merchant|Can sell the player items such as weaposn, potions, armor etc|
 |A5|Elemental enemy|A special non boss enemy with some kind of elemental quirk|
 
-## Use Case Template
+## Use Cases
 |ID|Title|Actor|Sunshine|Alternate|
 |---|---|---|---|---|
 |UC1|Player buys/sells|Player, Merchant|The player buys or sells an item|No money, doesn't wanna trade with you etc|
@@ -17,5 +17,3 @@
 |UC3|Player battles the boss|Player, Boss|Player overcomes the challenge|Player losses terribly|
 |UC4|||||
 |UC5|||||
-
-## Use Cases Table
