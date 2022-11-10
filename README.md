@@ -36,6 +36,37 @@ Console/Text based RPG, developed @ Hansenberg 2022
 
 ## Krav analyse
 
+### Personaer
+
+#### Navn: john Smith
+Nationalitet: dansk
+alder: 17år
+uddannelse: stx 
+job: fritids arbejde i gamestop
+indkomst: 2130kr
+værdier: Frihed, drikke, pokemon-go
+ønsker: oplev Japan, cosplay conference(koyo-con), 
+MBTI: ESPN
+
+typisk dag: stå op spise mad tag til skole tag til arbejde, han er lazy boy i skolen, han seer anime i skolen. på vejen til arbejde hører "2D OR NOT 2D"
+            nå han er færdig med arbejde, kommer hjem smider tasken væk, og så spiser noget noodles hurtigt, og sider og spil T-RPG. 
+
+
+
+#### Navn: kandis nuts
+Nationalitet: britisk
+alder: 16år
+uddannelse: hf
+job: fritids arbejde i bilka i legtøj afdeling
+indkomst: 2130kr
+værdier: familie, kærelighed, venskab.
+ønsker: at være soldat, 6-pack, en kæreste 
+MBTI: ESPN
+
+typisk dag: stå op tildig læse lidt til dagn lektie, også tag bad også tag til skole, 
+https://www.aarki.com/insights/role-playing-and-strategy-games-user-demographics
+
+
 ### User stories
 
 ### Aktør tabel
