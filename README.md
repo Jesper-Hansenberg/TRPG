@@ -1,43 +1,50 @@
+# TRPG
+Console/Text based RPG, developed @ Hansenberg 2022
+
 Table of contents:
 - [TRPG](#trpg)
-  - [Forord](#forord)
-  - [Ordliste](#ordliste)
-  - [Problem formulering](#problem-formulering)
-    - [Problem afgrænsning](#problem-afgrænsning)
-  - [Metoder](#metoder)
-    - [Personaer](#personaer)
-    - [User stories](#user-stories)
-    - [C4 Model](#c4-model)
-      - [Context](#context)
-      - [Containers](#containers)
-      - [Components](#components)
-      - [Class diagram](#class-diagram)
-    - [Aktør tabel](#aktør-tabel)
-    - [MuSCoW](#muscow)
-    - [Usecases](#usecases)
-      - [Usecase diagram](#usecase-diagram)
-  - [Koncept og Ide generering](#koncept-og-ide-generering)
-  - [Krav analyse](#krav-analyse)
+- [Forord](#forord)
+- [Ordliste](#ordliste)
+- [Problem formulering](#problem-formulering)
+  - [Problem afgrænsning](#problem-afgrænsning)
+- [Projekt plan](#projekt-plan)
+- [Metoder](#metoder)
+  - [Personaer](#personaer)
+  - [User stories](#user-stories)
+  - [C4 Model](#c4-model)
+    - [Context](#context)
+    - [Containers](#containers)
+    - [Components](#components)
+  - [Class diagram](#class-diagram)
+  - [Aktør tabel](#aktør-tabel)
+  - [Usecases](#usecases)
+    - [Usecase diagram](#usecase-diagram)
+  - [MuSCoW](#muscow)
+- [Koncept og Ide generering](#koncept-og-ide-generering)
+- [Krav analyse](#krav-analyse)
     - [Personaer](#personaer-1)
     - [User stories](#user-stories-1)
     - [Aktør tabel](#aktør-tabel-1)
     - [Usecases](#usecases-1)
       - [Usecase diagram](#usecase-diagram-1)
-  - [Krav specification](#krav-specification)
-    - [Aktør tabel (Refererence til Krav Analysen)](#aktør-tabel-refererence-til-krav-analysen)
+- [Krav specification](#krav-specification)
+    - [Aktør tabel](#aktør-tabel-2)
     - [MuSCoW](#muscow-1)
-  - [Software design](#software-design)
-    - [C4 Context](#c4-context)
-    - [TRPG Container](#trpg-container)
-  - [Implementation](#implementation)
-  - [Test](#test)
+- [Software design](#software-design)
+  - [C4 Context](#c4-context)
+  - [C4 Container](#c4-container)
+  - [C4 Component](#c4-component)
+  - [Komponent diagram](#komponent-diagram)
+  - [Klasse diagram](#klasse-diagram)
+- [Implementation](#implementation)
+- [Test](#test)
+- [Referencer](#referencer)
+- [Bilag](#bilag)
 
-# TRPG
-Console/Text based RPG, developed @ Hansenberg 2022
 
-## Forord
+# Forord
 
-## Ordliste
+# Ordliste
 
 | Ord | Beskrivelse |
 |---|---|
@@ -45,15 +52,16 @@ Console/Text based RPG, developed @ Hansenberg 2022
 | | |
 | | |
 
-## Problem formulering
+# Problem formulering
 
 Hvordan kan man inspirer til positive klima ændringstiltag 
 igennem et tekst baseret rollespil?
 
-### Problem afgrænsning
+## Problem afgrænsning
 
+Applikationen skal udvikles i C#, net 6.0 uden brug af advancerede eksterne biblioteker og moduler.  
 
-## Projekt plan
+# Projekt plan
 
 | Ansvars område | Primær | Sekundær |
 |---|---|---|
@@ -77,7 +85,6 @@ gantt
       Usecases        :2022-11-14, 7d
       Usecase Diagram :2022-11-14, 7d
 
-    
     section Krav Specifikation
       Aktør tabel     :2022-11-14, 14d
       MuSCoW tabel    :2022-11-14, 14d
@@ -97,11 +104,11 @@ gantt
       Nytår      : 1d
 ```
 
-## Metoder
+# Metoder
 
-### Personaer
+## Personaer
 
-### User stories
+## User stories
 
 |Example|Estimate|
 |---|---|
@@ -137,30 +144,30 @@ gantt
 |When [action taken]|
 |Then [outcome of taking action]|
 
-### C4 Model
+## C4 Model
 
-#### Context 
+### Context 
 
-#### Containers
+### Containers
 
-#### Components 
+### Components 
 
-#### Class diagram
+## Class diagram
 
-### Aktør tabel
+## Aktør tabel
 
-### MuSCoW
+## Usecases
 
-### Usecases
+### Usecase diagram
 
-#### Usecase diagram
+## MuSCoW
 
-## Koncept og Ide generering
+# Koncept og Ide generering
 
  * [BrainStorm billede goes here]
  * Beskrivende tekst
 
-## Krav analyse
+# Krav analyse
 
 ### Personaer
 
@@ -212,22 +219,28 @@ https://www.aarki.com/insights/role-playing-and-strategy-games-user-demographics
 
 #### Usecase diagram
 
-## Krav specification
+# Krav specification
 
-### Aktør tabel (Refererence til Krav Analysen)
+### Aktør tabel
 
 ### MuSCoW
 
-## Software design
+# Software design
 
-### C4 Context
+## C4 Context
 
-### TRPG Container
+## C4 Container
 
-## Implementation
+## C4 Component
 
-## Test
+## Komponent diagram
 
-## Referencer
+## Klasse diagram
 
-## Bilag
+# Implementation
+
+# Test
+
+# Referencer
+
+# Bilag
