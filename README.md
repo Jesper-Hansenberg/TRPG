@@ -229,7 +229,11 @@ https://www.aarki.com/insights/role-playing-and-strategy-games-user-demographics
 
 ## C4 Context
 
+![Context](4_Design/ContextDiagram.png)
+
 ## C4 Container
+
+![Context](4_Design/ContainerDiagram.png)
 
 ## C4 Component
 

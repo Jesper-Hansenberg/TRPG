@@ -1,21 +1,33 @@
 @startuml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
-!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
 !define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
-!include DEVICONS/angular.puml
-!include DEVICONS/java.puml
-!include DEVICONS/msql_server.puml
 !include FONTAWESOME/users.puml
 
 LAYOUT_WITH_LEGEND()
 
-Person(user, "Customer", "People that need products", $sprite="users")
-Container(spa, "SPA", "angular", "The main interface that the customer interacts with", $sprite="angular")
-Container(api, "API", "java", "Handles all business logic", $sprite="java")
-ContainerDb(db, "Database", "Microsoft SQL", "Holds product, order and invoice information", $sprite="msql_server")
+Person_Ext(user, "Player", "Person that plays the game", $sprite="users")
 
-Rel(user, spa, "Uses", "https")
-Rel(spa, api, "Uses", "https")
-Rel_R(api, db, "Reads/Writes")
+System_Boundary(c1, "TRPG"){
+
+    Container(gui, "GUI", "CLI, Command Line Interface", "The main interface that the player interacts with")
+    Container(sm, "StateMachine", "Maintains game state")
+    Container(player, "Player")
+    Container(inventory, "Inventory")
+    Container(io, "IO")
+    Container(action, "Action")
+
+    ContainerDb(db, "Database", "Textfiles", "Contains story pieces, item definitions and save games")
+    
+    Rel(user, gui, "Inputs commands")
+    Rel(gui, sm, "Updates")
+    Rel(sm, gui, "Updates")
+    Rel(action, sm, "Updates")
+    Rel(sm, action, "Updates")
+    Rel(action, player, "Updates")
+    Rel(player, sm, "Updates")
+    Rel(inventory, player, "")
+    Rel(sm, io, "Read/Write")
+    Rel(io, db, "Read/Write")
+}
 @enduml
