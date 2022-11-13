@@ -47,7 +47,12 @@ Console/Text based RPG, developed @ Hansenberg 2022
 
 ## Problem formulering
 
+Hvordan kan man inspirer til positive klima ændringstiltag 
+igennem et tekst baseret rollespil?
+
 ### Problem afgrænsning
+
+
 
 ## Metoder
 
@@ -180,3 +185,6 @@ https://www.aarki.com/insights/role-playing-and-strategy-games-user-demographics
 
 ## Test
 
+## Referencer
+
+## Bilag
