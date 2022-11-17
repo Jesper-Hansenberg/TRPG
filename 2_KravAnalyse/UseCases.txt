@@ -1,7 +1,0 @@
-Team Finger
-
-Opgave:
-
-Aktør tabel
-Usecase template
-5x Usecases
