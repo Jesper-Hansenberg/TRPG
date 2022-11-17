@@ -75,33 +75,34 @@ gantt
     title TRPG
     dateFormat  YYYY-MM-DD
     section Gaia's Eruption
-      World building  :2022-11-11, 50d
+      World building  :2022-11-11, 70d
 
     section Krav analyse
       Brainstorm      :2022-11-01, 7d
-      Userstories     :2022-11-07, 7d
-      Personaer       :2022-11-07, 7d
-      C4-Context      :2022-11-07, 7d
-      Usecases        :2022-11-14, 7d
-      Usecase Diagram :2022-11-14, 7d
+      Userstories     :2022-11-07, 10d
+      Personaer       :2022-11-07, 10d
+      C4-Context      :2022-11-07, 31d
+      Usecases        :2022-11-14, 24d
+      Usecase Diagram :2022-11-14, 24d
 
     section Krav Specifikation
-      Aktør tabel     :2022-11-14, 14d
-      MuSCoW tabel    :2022-11-14, 14d
+      Aktør tabel     :2022-11-07, 31d
+      MuSCoW tabel    :2022-11-14, 31d
 
     section Design
-      C4-Container      :2022-11-28, 7d
-      Komponent diagram :2022-11-28, 7d
-      Klasse diagram    :2022-11-28, 21d
+      C4-Container      :2022-12-08, 8d
+      Komponent diagram :2022-12-08, 8d
+      Klasse diagram    :2022-12-08, 21d
     
     section Implementation
-      Coding            :2022-11-28, 21d
-      Testing           :2022-11-28, 21d
+      Coding            :2022-12-08, 50d
+      Testing           :2022-12-08, 50d
 
     section Afslutning
-      Rapportering                 :2022-12-15  , 15d
-      Indelling i nye grupper      :2022-12-30  , 1d
-      Nytår      : 1d
+      Rapportering              :2023-01-20, 10d
+      Afslutning                :2023-01-30, 1d
+      Nytår                     :2022-12-31, 1d
+
 ```
 
 # Metoder
