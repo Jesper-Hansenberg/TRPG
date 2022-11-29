@@ -173,30 +173,6 @@ Hvordan skal læser forstå de diagrammer der kommer længere nede?
 
 Hvorfor er det relevant?
 
-### Context 
-
-Hvad er C4 Context?
-
-Hvordan skal læser forstå diagrammet der kommer længere nede?
-
-Hvorfor er det relevant?
-
-### Containers
-
-Hvad er C4 Containers?
-
-Hvordan skal læser forstå diagrammet der kommer længere nede?
-
-Hvorfor er det relevant?
-
-### Components 
-
-Hvad er C4 Components?
-
-Hvordan skal læser forstå diagrammet der kommer længere nede?
-
-Hvorfor er det relevant?
-
 ## Class diagram
 
 Hvad er et klasse diagram?
@@ -304,6 +280,8 @@ https://www.aarki.com/insights/role-playing-and-strategy-games-user-demographics
 
 #### Usecase diagram
 
+![Context](2_KravAnalyse/UsecaseDiagram.png)
+
 # Krav specification
 
 ## Aktør tabel
@@ -338,9 +316,13 @@ https://www.aarki.com/insights/role-playing-and-strategy-games-user-demographics
 
 ## C4 Container
 
+Applikationen er designet som en lag delt arkitektur, se ref[1]
+
 ![Context](4_Design/ContainerDiagram.png)
 
 ## C4 Component
+
+![Context](4_Design/Component_Logic.png)
 
 ## Klasse diagram
 
@@ -349,5 +331,9 @@ https://www.aarki.com/insights/role-playing-and-strategy-games-user-demographics
 # Test
 
 # Referencer
+
+| Id | Description | Link |
+|---|---|---|
+|1|Multilayer achitecture| https://en.wikipedia.org/wiki/Multitier_architecture|
 
 # Bilag

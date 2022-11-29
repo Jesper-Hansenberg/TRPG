@@ -16,7 +16,6 @@ System_Boundary(logic, "Logic"){
     System_Boundary(library, "Library"){
         Component(character, "Character")
         Component(combat, "Combat")
-        Component(inventory, "Inventory")
         Component(story, "Story")
     }
 }

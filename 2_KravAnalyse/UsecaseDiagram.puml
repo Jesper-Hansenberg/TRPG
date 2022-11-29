@@ -1,0 +1,32 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Player
+actor Character
+actor Merchant
+actor NPC
+actor Animal
+actor Enemy
+
+Player -left-|> Character
+Merchant --|> NPC
+Enemy --|> NPC
+
+rectangle MainUsecases{
+    Character -- (Talk)
+    (Talk) -- NPC
+    Character -- (buys/sells)
+    (buys/sells) - Merchant
+
+    Character -- (steals)
+    (steals) -- Merchant
+
+    Character -- (fights)
+    (fights) -- Enemy
+    (fights) -left- (kills)
+
+    Character -- (kills)    
+    (kills) -- Enemy
+    (kills) -- Merchant
+}
+@enduml
