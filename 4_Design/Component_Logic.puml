@@ -1,0 +1,25 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+!define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
+!include FONTAWESOME/users.puml
+
+
+Component_Ext(GUI, "GUI", "Command line interface")
+Component_Ext(DB, "Database")
+
+System_Boundary(logic, "Logic"){
+    Component(sm, "StateMachine")
+    Component(crud, "CRUD")
+    sm --> crud
+    crud --> DB
+    System_Boundary(library, "Library"){
+        Component(character, "Character")
+        Component(combat, "Combat")
+        Component(inventory, "Inventory")
+        Component(story, "Story")
+    }
+}
+
+GUI --> sm
+@enduml

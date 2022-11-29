@@ -11,6 +11,7 @@ Table of contents:
 - [Metoder](#metoder)
   - [Personaer](#personaer)
   - [User stories](#user-stories)
+    - [Template](#template)
   - [C4 Model](#c4-model)
     - [Context](#context)
     - [Containers](#containers)
@@ -28,13 +29,12 @@ Table of contents:
     - [Usecases](#usecases-1)
       - [Usecase diagram](#usecase-diagram-1)
 - [Krav specification](#krav-specification)
-    - [Aktør tabel](#aktør-tabel-2)
-    - [MuSCoW](#muscow-1)
+  - [Aktør tabel](#aktør-tabel-2)
+  - [MuSCoW](#muscow-1)
 - [Software design](#software-design)
   - [C4 Context](#c4-context)
   - [C4 Container](#c4-container)
   - [C4 Component](#c4-component)
-  - [Komponent diagram](#komponent-diagram)
   - [Klasse diagram](#klasse-diagram)
 - [Implementation](#implementation)
 - [Test](#test)
@@ -49,8 +49,9 @@ Table of contents:
 | Ord | Beskrivelse |
 |---|---|
 | Compiler | Et stykke software der kan lave tekst om til binær kode en computer forstår|
-| | |
-| | |
+| CLI | Command line interface |
+| NPC | non-player character |
+| .txt | standard windows tekst format filer|
 
 # Problem formulering
 
@@ -63,17 +64,44 @@ Applikationen skal udvikles i C#, net 6.0 uden brug af advancerede eksterne bibl
 
 # Projekt plan
 
-| Ansvars område | Primær | Sekundær |
-|---|---|---|
-|Brainstorm|Alle|
-|User stories| Team A | Team B |
-|...| ... | ... |
-
+| Ansvars område | Primær | Sekundær | Tertiær | 
+|---|---|---|---|
+|Brainstorm | Alle | |
+|World building | Alle | |
+|Prototype | Alle | |
+|Metoder - Personaer | 1 | 2 | 3 |
+|Metoder - User stories| 4 | 5 | 6 |
+|Metoder - C4 generelt | 2 | 3 | 4 |
+|Metoder - C4 Context | 5 | 6 | 1 |
+|Metoder - C4 Containers | 3 | 4 | 5 |
+|Metoder - C4 Component | 6 | 1 | 2 |
+|Metoder - Klasse diagram | 4 | 5 | 6 |
+|Metoder - Aktør tabel | 1 | 2 | 3 |
+|Metoder - Usecases | 5 | 6 | 1 |
+|Metoder - Usecase diagram | 2 | 3 | 4 |
+|Metoder - MuSCoW | 6 | 1 | 2 |
+|Krav - Analyse - Personaer | 3 | 4 | 5 |
+|Krav - Analyse - User stories | 1 | 2 | 3 |
+|Krav - Analyse - Aktør tabel | 4 | 5 | 6 |
+|Krav - Analyse - Usecases | 2 | 3 | 4 | 
+|Krav - Analyse - Usecase diagram | 5 | 6 | 1 | 
+|Krav - Specification - Aktør tabel | 3 | 4 | 5 | 
+|Krav - Specification - MuSCoW | 6 | 1 | 2 | 
+|Design - C4 Context | 4 | 5 | 6 |
+|Design - C4 Container | 1 | 2 | 3 |
+|Design - C4 Component | 5 | 6  | 1 |
+|Design - Klasse diagram | 2 | 3 | 4 |
+|Test | 6 | 1 | 2 |
 
 ```mermaid
 gantt
     title TRPG
     dateFormat  YYYY-MM-DD
+    section lektioner
+      (4) Prototyping     : 2022-12-08, 1d 
+      (2) Requirements    : 2022-12-14, 1d 
+      (2) Design          : 2022-12-16, 1d 
+
     section Gaia's Eruption
       World building  :2022-11-11, 70d
 
@@ -81,17 +109,18 @@ gantt
       Brainstorm      :2022-11-01, 7d
       Userstories     :2022-11-07, 10d
       Personaer       :2022-11-07, 10d
-      C4-Context      :2022-11-07, 31d
-      Usecases        :2022-11-14, 24d
-      Usecase Diagram :2022-11-14, 24d
+      Prototyping     :2022-12-08, 5d
+      C4-Context      :2022-11-07, 20d
+      Usecases        :2022-11-14, 50d
+      Usecase Diagram :2022-11-14, 50d
 
     section Krav Specifikation
-      Aktør tabel     :2022-11-07, 31d
-      MuSCoW tabel    :2022-11-14, 31d
+      Aktør tabel     :2022-11-07, 40d
+      MuSCoW tabel    :2022-11-14, 50d
 
     section Design
-      C4-Container      :2022-12-08, 8d
-      Komponent diagram :2022-12-08, 8d
+      C4-Container      :2022-12-08, 10d
+      C4-Component      :2022-12-08, 10d
       Klasse diagram    :2022-12-08, 21d
     
     section Implementation
@@ -109,32 +138,23 @@ gantt
 
 ## Personaer
 
+Hvad er en persona?
+
+Hvordan skal læser forstå de tabeller der kommer længere nede?
+
+Hvorfor er det relevant?
+
+
 ## User stories
 
-|Example|Estimate|
-|---|---|
-|User Story:|
-|As a [description of user]|
-|I want [functionality]|
-|So that [benefit]|
-|Acceptance Criteria:|
-|Given [how things begin]|
-|When [action taken]|
-|Then [outcome of taking action]|
+Hvad er en user story?
 
-|Reciprocal Terminal Flow|Estimate|
-|---|---|
-|User Story:|
-|As a player|
-|I want the terminal to respond to my actions|30 minutes|
-|So I can interact with the program|30 minutes|
-|Acceptance Criteria:|
-|Given that these interactions should be easy to comprehend,|30 minutes|
-|When I press a key|15 minutes|
-|The program should respond with feedback|15 minutes|
+Hvordan skal læser forstå de tabeller der kommer længere nede?
 
+Hvorfor er det relevant?
 
-|Gameplay Experience|Estimate|
+### Template
+|Template|Estimate|
 |---|---|
 |User Story:|
 |As a [description of user]|
@@ -147,26 +167,65 @@ gantt
 
 ## C4 Model
 
+Hvad er C4 modellen?
+
+Hvordan skal læser forstå de diagrammer der kommer længere nede?
+
+Hvorfor er det relevant?
+
 ### Context 
+
+Hvad er C4 Context?
+
+Hvordan skal læser forstå diagrammet der kommer længere nede?
+
+Hvorfor er det relevant?
 
 ### Containers
 
+Hvad er C4 Containers?
+
+Hvordan skal læser forstå diagrammet der kommer længere nede?
+
+Hvorfor er det relevant?
+
 ### Components 
+
+Hvad er C4 Components?
+
+Hvordan skal læser forstå diagrammet der kommer længere nede?
+
+Hvorfor er det relevant?
 
 ## Class diagram
 
+Hvad er et klasse diagram?
+
+Hvordan skal læser forstå diagrammet der kommer længere nede?
+
+Hvorfor er det relevant?
+
 ## Aktør tabel
+
+...
 
 ## Usecases
 
+...
+
 ### Usecase diagram
+
+...
 
 ## MuSCoW
 
+...
+
 # Koncept og Ide generering
 
- * [BrainStorm billede goes here]
- * Beskrivende tekst
+![ZORK](1_Koncept/Zork.PNG)
+
+![DoomRL](1_Koncept/DoomRL.png)
 
 # Krav analyse
 
@@ -205,9 +264,9 @@ https://www.aarki.com/insights/role-playing-and-strategy-games-user-demographics
 
 |Story Expectations|Estimate|
 |---|---|
-|User Story:|8-10 hours in total|
+|User Story:||
 |As someone interested in storytelling|
-|I want a riveting and well-written sotry|
+|I want a riveting and well-written story|
 |So I can immerse myself in the other world|
 |Acceptance Criteria:|
 |Given I'm playing a text-based RPG|
@@ -226,6 +285,7 @@ https://www.aarki.com/insights/role-playing-and-strategy-games-user-demographics
 |A6|Random NPC|random NPC's roaming the world| 
 |A7|Animal|Animals that can be killed and eaten by player| 
 |A8|The Climate|The planets "force" that gets more violent the more you/the enemy pollutes| 
+|A9|Character| The players ingame character|
 
 ### Usecases
 
@@ -242,15 +302,33 @@ https://www.aarki.com/insights/role-playing-and-strategy-games-user-demographics
 |UC9|Player kills animal|Player, Animal|The animal dies|The animal runs away/attacks player| 
 |UC10|Climate attacks player|Player, Climate|The player survives the attack|The trees come alive and kill the player| 
 
-
-
 #### Usecase diagram
 
 # Krav specification
 
-### Aktør tabel
+## Aktør tabel
 
-### MuSCoW
+|ID| Actor | Description  | 
+|---|---|---| 
+|A1|Player|The player who uses the console to play|
+|A2|Enemy|A normal minion kind of enemy, hostile towards player|
+|A4|Merchant|Can sell the player items such as weaposn, potions, armor etc| 
+|A9|Character| The players ingame character|
+
+## MuSCoW
+
+| Id | Actor | MuSCoW | Description | 
+| --- | --- | --- | --- | 
+| M1 | Player | must | be able to create his own Character|
+| M2 | Player | must | use CLI to navigate a character through the story|
+| M2.1 | story | must | be .txt files |
+| M3 | Character | must | be able interact with Merchant |
+| M4 | Character | must | be able to consume food to regain health |
+| M5 | Character | must | be able to fight Enemy |
+| M6 | Enemy | must | be able to reward loot when slain|
+| M7 | Player | must | be able save a Character to local storage |
+| M8 | Player | must | be able load a Character from local storage |
+| ... | ... | ... | ... |
 
 # Software design
 
@@ -263,8 +341,6 @@ https://www.aarki.com/insights/role-playing-and-strategy-games-user-demographics
 ![Context](4_Design/ContainerDiagram.png)
 
 ## C4 Component
-
-## Komponent diagram
 
 ## Klasse diagram
 
