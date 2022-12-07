@@ -15,8 +15,10 @@ public class TRPG
         Chapters.Add("Chapter_1");
         Chapters.Add("Tavern");
         Chapters.Add("Volcano");
+        int storyProgress = 0;
 
-        ReadStoryFile(Chapters[0], true);
+        ReadStoryFile(Chapters[storyProgress], true);
+        storyProgress++;
         Console.WriteLine("Please enter your name");
         Player.Name = GetStringInput("No, I want your name");
         Console.WriteLine("Please enter level");
@@ -25,13 +27,13 @@ public class TRPG
         Player.Strength = GetIntInput("No, I want your strength");
         Player.Health = 10 * Player.Strength;
 
-        ReadStoryFile(Chapters[1], true);
+        ReadStoryFile(Chapters[storyProgress++], true);
         Console.ReadLine();
         Console.Clear();
-        ReadStoryFile(Chapters[2], false);
+        ReadStoryFile(Chapters[storyProgress++], false);
         Console.ReadLine();
         Console.Clear();
-        ReadStoryFile(Chapters[3], false);
+        ReadStoryFile(Chapters[storyProgress++], false);
         Console.ReadLine();
         Console.Clear();
     }
